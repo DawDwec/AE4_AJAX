@@ -1,0 +1,54 @@
+{
+  "datosPizza": [
+    {
+      "tamanosPizza": [
+        {
+          "tamano": "pequena",
+          "precio": 5
+        },
+        {
+          "tamano": "mediana",
+          "precio": 10
+        },
+        {
+          "tamano": "familiar",
+          "precio": 15
+        }
+      ],
+      "ingredientesPizza": [
+        {
+          "ingrediente": "tomate",
+          "precio": 1
+        },
+        {
+          "precio": 1
+        },
+        {
+          "ingrediente": "jamon",
+          "precio": 1
+        },
+        {
+          "ingrediente": "champinones",
+          "precio": 1
+        },
+        {
+          "ingrediente": "maiz",
+          "precio": 1
+        },
+        {
+          "ingrediente": "peperoni",
+          "precio": 1
+        },
+        {
+          "ingrediente": "pina",
+          "precio": 1
+        },
+        {
+          "ingrediente": "atun",
+          "precio": 1
+        }
+      ]
+    }
+  ]
+}
+
