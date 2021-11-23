@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE4 AJAX</title>
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JavaScript-->
+    <script type="application/javascript" defer src="js/tabla.js"></script>
+
+
+</head>
+<body>
+    <div>
+        <form id="formulario" action="pedido.php" method="post">
+        <fieldset id="pedido">
+            <legend>Datos cliente:</legend>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" class="form-control">
+                <label for="direccion">Direccion:</label>
+                <input id="direccion" type="text" class="form-control">
+                <label for="telefono">Telefono:</label>
+                <input id="telefono" type="text" class="form-control">
+                <label for="email">Email:</label>
+                <input id="email" type="text" class="form-control">
+            </div>
+
+            <br>
+
+            <button id="btnListarTamano" onclick="enviarPeticionAsincrona()">Listar tamaños pizzas</button>
+
+            <br>
+
+            <div id="tamanoPizza"></div>
+
+            <br>
+
+            <div id="ingredientesPizza"></div>
+
+            <br>
+
+            <div>
+                <button id="botonProcesar" type="submit" value="Submit" class="btn btn-success btn-block">Procesar pedido</button> 
+            </div>
+
+            <br>
+
+            <div>
+                <button id="botonRefrescar" type="reset" value="Refrescar" class="btn btn-outline-danger btn-block">Refrescar pedido</button> 
+            </div>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
