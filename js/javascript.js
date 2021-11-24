@@ -1,4 +1,4 @@
-const urlDestino = "https://127.0.0.1/AE4_AJAX/"
+const urlDestino = "http://127.0.0.1:5500/AE4_AJAX/"
 const recurso = "pizza.json"
 
 function enviarPeticionAsincrona() {
@@ -8,6 +8,7 @@ function enviarPeticionAsincrona() {
     xmlHttp.onreadystatechange = function () {
         if (this.readyState == 4) {
             if (this.status == 200) {
+                console.log(this.responseText)
                 listarTamanos(this.responseText)
             } else {
                 alert("Error al obtener respuesta del servdor")
@@ -15,21 +16,20 @@ function enviarPeticionAsincrona() {
         }
     }
 
-    xmlHttp.open('GET', urlDestino + recurso, true)
+    xmlHttp.open('GET', recurso, true)
     xmlHttp.send(null)
+    
 }
 
 function listarTamanos(jsonDoc) {
     var objetoJson = JSON.parse(jsonDoc)
 
-    console.log(objetoJson)
-
     var table = "<tr><th>Tamaño</th><th>Precio</th></tr>";
-    var arrayPizzas = objetoJson.datosPizza.tamanoPizza;
+    var arrayPizzas = objetoJson.datosPizza;
 
-    for(let datosPizza of arrayPizzas) {
-        table += "<tr><td>" + datosPizza.tamanoPizza.tamano + "</td>"+
-        "<td>" + datosPizza.tamanoPizza.precio + "</td></tr>";
+    for(let pizza of arrayPizzas) {
+        table += "<tr><td>" + pizza.tamanoPizza.tamano + "</td>"+
+        "<td>" + pizza.tamanoPizza.precio + "</td></tr>";
     }
 
     tamanoPizza.innerHTML = table;
