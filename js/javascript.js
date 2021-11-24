@@ -1,4 +1,4 @@
-const urlDestino = "http://localhost:5500/AE4_AJAX/"
+const urlDestino = "https://127.0.0.1/AE4_AJAX/"
 const recurso = "pizza.json"
 
 function enviarPeticionAsincrona() {
@@ -25,11 +25,11 @@ function listarTamanos(jsonDoc) {
     console.log(objetoJson)
 
     var table = "<tr><th>Tamaño</th><th>Precio</th></tr>";
-    var arrayPizzas = objetoJson.datosPizza.tamanosPizza;
+    var arrayPizzas = objetoJson.datosPizza.tamanoPizza;
 
     for(let datosPizza of arrayPizzas) {
-        table += "<tr><td>" + datosPizza.tamanosPizza.tamano + "</td>"+
-        "<td>" + datosPizza.tamanosPizza.precio + "</td></tr>";
+        table += "<tr><td>" + datosPizza.tamanoPizza.tamano + "</td>"+
+        "<td>" + datosPizza.tamanoPizza.precio + "</td></tr>";
     }
 
     tamanoPizza.innerHTML = table;

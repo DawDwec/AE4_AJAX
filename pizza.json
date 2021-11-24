@@ -1,52 +1,52 @@
 {
-    "datosPizza": {
-        "tamanoPizza": [
-            {
-                "tamano": "pequeño",
-                "precio": "5" 
-            },
-            {
-                "tamano": "mediano",
-                "precio": "10"
-            },
-            {
-                "tamano": "grande",
-                "precio": "15"
-            }
-        ],
-        "ingredientesPizza": [
-            {
-                "ingrediente": "tomate",
-                "precio": 1
-            },
-            {
-                "ingrediente": "queso",
-                "precio": 1
-            },
-            {
-                "ingrediente": "jamon",
-                "precio": 1
-            },
-            {
-                "ingrediente": "champinones",
-                "precio": 1
-            },
-            {
-                "ingrediente": "maiz",
-                "precio": 1
-            },
-            {
-                "ingrediente": "peperoni",
-                "precio": 1
-            },
-            {
-                "ingrediente": "piña",
-                "precio": 1
-            },
-            {
-                "ingrediente": "atun",
-                "precio": 1
-            }
-        ]
-    }
+  "datosPizza": {
+    "tamanoPizza": [
+      {
+        "tamano": "pequeño",
+        "precio": 5
+      },
+      {
+        "tamano": "mediano",
+        "precio": 10
+      },
+      {
+        "tamano": "grande",
+        "precio": 15
+      }
+    ],
+    "ingredientesPizza": [
+      {
+        "ingrediente": "tomate",
+        "precio": 1
+      },
+      {
+        "ingrediente": "queso",
+        "precio": 1
+      },
+      {
+        "ingrediente": "jamon",
+        "precio": 1
+      },
+      {
+        "ingrediente": "champinones",
+        "precio": 1
+      },
+      {
+        "ingrediente": "maiz",
+        "precio": 1
+      },
+      {
+        "ingrediente": "peperoni",
+        "precio": 1
+      },
+      {
+        "ingrediente": "piña",
+        "precio": 1
+      },
+      {
+        "ingrediente": "atun",
+        "precio": 1
+      }
+    ]
+  }
 }
