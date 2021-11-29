@@ -1,13 +1,13 @@
 [
-  { "tipo": "pequena", "precio": 5 },
-  { "tipo": "mediana", "precio": 10 },
-  { "tipo": "grande", "precio": 15 },
-  { "tipo": "tomate", "precio": 1 },
-  { "tipo": "queso", "precio": 1 },
-  { "tipo": "jamon", "precio": 1 },
-  { "tipo": "champiñones", "precio": 1 },
-  { "tipo": "maiz", "precio": 1 },
-  { "tipo": "peperoni", "precio": 1 },
-  { "tipo": "piña", "precio": 1 },
-  { "tipo": "atun", "precio": 1 }
+  { "tipo": "Pequena", "precio": 5 },
+  { "tipo": "Mediana", "precio": 10 },
+  { "tipo": "Grande", "precio": 15 },
+  { "tipo": "Tomate", "precio": 1 },
+  { "tipo": "Queso", "precio": 1 },
+  { "tipo": "Jamon", "precio": 1 },
+  { "tipo": "Champiñones", "precio": 1 },
+  { "tipo": "Maiz", "precio": 1 },
+  { "tipo": "Peperoni", "precio": 1 },
+  { "tipo": "Piña", "precio": 1 },
+  { "tipo": "Atun", "precio": 1 }
 ]

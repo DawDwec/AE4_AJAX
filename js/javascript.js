@@ -11,7 +11,7 @@ function enviarPeticionAsincrona() {
                 console.log(this.responseText)
                 listarTamanos(this.responseText)
             } else {
-                alert("Error al obtener respuesta del servdor")
+                alert("Error al obtener respuesta del servidor")
             }
         }
     }
@@ -28,7 +28,7 @@ function listarTamanos(jsonDoc) {
     var arrayPizzas = objetoJson;
 
     for(let pizza of arrayPizzas) {
-        table += "<tr><td>" + pizza.tipo + "</td>"+
+        table += "<tr><td>" + pizza.tipo + "</td>" +
         "<td>" + pizza.precio + "</td></tr>";
     }
 
