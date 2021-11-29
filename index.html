@@ -47,10 +47,17 @@
         
             <br>   
 
-            <div>
+           <div>
                 <button type="button" id="btnListarTamano" onclick="enviarPeticionAsincrona()">Lista de opciones y precios pizzas</button>
                 <table id="Tabla"></table>
                 <input type="button" onclick="checkValue()" value="Aceptar">
+
+                <br>
+                
+                <tr>
+                    <td><strong>PRECIO TOTAL:</strong></td>
+                        <td id="precioTotal"><div class="recalculate-text text-right text-underline">Total: <span id="result">0</span></div></td>
+                </tr>
             </div>
 
             <br>
