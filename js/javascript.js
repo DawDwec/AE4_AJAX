@@ -43,7 +43,6 @@ for (var i=0; i < len; i++) {
 
     td = document.createElement('td');
     td.innerHTML = s.key;
-    tr.appendChild(td);
     var checkbox = document.createElement('input');
     checkbox.type = "checkbox";
     checkbox.name = "key";
