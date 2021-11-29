@@ -1,52 +1,13 @@
-{
-  "datosPizza": {
-    "tamanoPizza": [
-      {
-        "tamano": "pequeño",
-        "precio": 5
-      },
-      {
-        "tamano": "mediano",
-        "precio": 10
-      },
-      {
-        "tamano": "grande",
-        "precio": 15
-      }
-    ],
-    "ingredientesPizza": [
-      {
-        "ingrediente": "tomate",
-        "precio": 1
-      },
-      {
-        "ingrediente": "queso",
-        "precio": 1
-      },
-      {
-        "ingrediente": "jamon",
-        "precio": 1
-      },
-      {
-        "ingrediente": "champinones",
-        "precio": 1
-      },
-      {
-        "ingrediente": "maiz",
-        "precio": 1
-      },
-      {
-        "ingrediente": "peperoni",
-        "precio": 1
-      },
-      {
-        "ingrediente": "piña",
-        "precio": 1
-      },
-      {
-        "ingrediente": "atun",
-        "precio": 1
-      }
-    ]
-  }
-}
+[
+  { "tipo": "pequena", "precio": 5 },
+  { "tipo": "mediana", "precio": 10 },
+  { "tipo": "grande", "precio": 15 },
+  { "tipo": "tomate", "precio": 1 },
+  { "tipo": "queso", "precio": 1 },
+  { "tipo": "jamon", "precio": 1 },
+  { "tipo": "champiñones", "precio": 1 },
+  { "tipo": "maiz", "precio": 1 },
+  { "tipo": "peperoni", "precio": 1 },
+  { "tipo": "piña", "precio": 1 },
+  { "tipo": "atun", "precio": 1 }
+]

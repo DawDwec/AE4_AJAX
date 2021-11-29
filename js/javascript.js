@@ -25,13 +25,13 @@ function listarTamanos(jsonDoc) {
     var objetoJson = JSON.parse(jsonDoc)
 
     var table = "<tr><th>Tamaño</th><th>Precio</th></tr>";
-    var arrayPizzas = objetoJson.datosPizza;
+    var arrayPizzas = objetoJson;
 
     for(let pizza of arrayPizzas) {
-        table += "<tr><td>" + pizza.tamanoPizza.tamano + "</td>"+
-        "<td>" + pizza.tamanoPizza.precio + "</td></tr>";
+        table += "<tr><td>" + pizza.tipo + "</td>"+
+        "<td>" + pizza.precio + "</td></tr>";
     }
 
-    tamanoPizza.innerHTML = table;
+    listadoPizzas.innerHTML = table;
 
 }
