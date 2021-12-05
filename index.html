@@ -56,20 +56,20 @@
                 
                 <tr>
                     <td><strong>PRECIO TOTAL:</strong></td>
-                        <td id="precioTotal"><div class="recalculate-text text-right text-underline">Total: <span id="result">0</span></div></td>
+                        <td id="precioTotal"><div class="recalculate-text text-right text-underline">Total: <span id="precio">0</span></div></td>
                 </tr>
             </div>
 
             <br>
 
             <div>
-                <button id="botonProcesar" type="submit" value="Submit" class="btn btn-success btn-block">Procesar pedido</button> 
+                <button id="calc" type="submit" onclick="invoice()" class="btn btn-success btn-block">Procesar pedido</button> 
             </div>
 
             <br>
 
             <div>
-                <button id="botonRefrescar" type="reset" value="Refrescar" class="btn btn-outline-danger btn-block">Refrescar pedido</button> 
+                <button onClick="window.location.reload();" id="botonRefrescar" value="Refrescar" class="btn btn-outline-danger btn-block">Refrescar pedido</button> 
             </div>
        
 
