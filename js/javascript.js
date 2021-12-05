@@ -53,19 +53,40 @@ for (var i=0; i < len; i++) {
     table.appendChild(tr);
 }
 
-function checkValue(){
-    var names = document.getElementsByName("key");
-    names.forEach(function(s){console.log(s.value , s.checked);});
-};
 }
 
-function sumPrices(){
-    let sum = 0;
-    for(var i=0; i < arrayPizzas.length; i++){
-        if(arrayPizzas[i].checked){
-            sum = sum + parseInt(document.form1.ckb[i].precio);
-            }
-      document.getElementsById('result').innerHTML = sum;
+function invoice() {
+   
+    var precio = 0;
+    var ingrediente = document.getElementsByName("precio");
+    var ingredienteSelect = [];
+    var ingredienteDisplay = "";
+    for (var i = 0; i < ingrediente.length; i++) {
+        if (ingrediente[i].checked){
+            ingredienteSelect.push(ingrediente[i].value);
+        };
+    }; console.log("ingredienteSelect="+ingredienteSelect);
+    if (ingredienteSelect.length === 1) {
+        ingredienteDisplay = ingredienteSelect[0];
+    } else if (ingredienteSelect.length > 1) {
+        for (i=0; i < ingredienteSelect.length; i++){
+            ingredienteDisplay += ingredienteSelect[i];
+            if (i < (ingrediente.length-1)) {
+                ingredienteDisplay += ", ";
+            };
+        };
+    };
+    precio = ingredienteSelect.length; console.log("precio="+precio);
+    if (ingredienteSelect.length === 0) {
+        ingredienteDisplay = "Sin ingredientes";
+    }
     
-}
+    //Calculando el precio total
+    
+    var precioTotal = precio; console.log("precioTotal="+precioTotal);
+    
+    $("#ingrediente").html(ingredienteDisplay);
+    $("#precio").html("+"+precio+".00 €");~
+    $("#precioTotal").html(precioTotal+".00 €"); 
+
 }
